@@ -27,7 +27,8 @@ while True:
     # Use the user's input to create a prompt for the OpenAI API
     prompt = (f"Please provide a medical diagnosis based on the following information: "
              f"age={age}, gender={gender}, symptoms={symptoms}, duration={duration}, underlying medical conditions={conditions}. "
-             f"In addition, please provide information on possible causes of the diagnosis and suggested treatment options or medications.")
+             f"In addition, please provide information on possible causes of the diagnosis and suggested treatment options or medications (over the counter medicine one can take and the presicription and dosage depending on the age {age})."
+             f"In addition, please provide other possible diagnosis if there is")
 
     # Check the cache for a previous response to this prompt
     if prompt in diagnosis_cache:
